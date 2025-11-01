@@ -321,7 +321,7 @@ section {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(180deg, var(--primary), var(--secondary));
+    background: var(--primary);
 }
 
 .experience-item {
