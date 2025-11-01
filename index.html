@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franklin Jebaraj - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas for particle animation -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <div class="logo">FJ</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Franklin Jebaraj</h1>
+                <div class="subtitle">Full Stack Developer</div>
+                <p>Building scalable backend systems and intuitive user interfaces with Node.js, TypeScript, and Angular. Specialized in RESTful APIs, database optimization, and secure authentication flows.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-window-header">
+                        <div class="code-dot"></div>
+                        <div class="code-dot"></div>
+                        <div class="code-dot"></div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="code-text"><span class="keyword">const</span> <span class="function">developer</span> = {</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">2</span>
+                            <span class="code-text">  name: <span class="string">"Franklin Jebaraj"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <span class="code-text">  role: <span class="string">"Full Stack Developer"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            <span class="code-text">  experience: <span class="string">"2 years"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            <span class="code-text">  skills: [</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            <span class="code-text">    <span class="string">"Node.js"</span>, <span class="string">"TypeScript"</span>,</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">7</span>
+                            <span class="code-text">    <span class="string">"Angular"</span>, <span class="string">"PostgreSQL"</span></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">8</span>
+                            <span class="code-text">  ],</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">9</span>
+                            <span class="code-text">  motto: <span class="string">"Building solutions"</span></span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">10</span>
+                            <span class="code-text">};</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="floating-stats">
+                <div class="stat-card">
+                    <div class="stat-number">1.6+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Daily Operations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Data Points/sec</div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+        <div class="section-header">
+            <h2>Work Experience</h2>
+            <p>Building production-ready systems that scale</p>
+        </div>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Associate Trainee</div>
+                        <div class="experience-company">Finstien | Chennai</div>
+                    </div>
+                    <div class="experience-date">Jul 2024 - Present</div>
+                </div>
+                
+                <div class="project-section">
+                    <div class="project-title">
+                        <i class="fas fa-tasks"></i>
+                        Task Management Application
+                    </div>
+                    <ul class="project-details">
+                        <li>Built scalable backend APIs using Node.js and Express.js to handle 10,000+ daily task operations with <200ms response times</li>
+                        <li>Designed RESTful web services with secure authentication flows using JWT and OAuth 2.0, ensuring robust access control</li>
+                        <li>Developed frontend using Angular and RxJS observables for real-time task synchronization and efficient state management across dashboards</li>
+                        <li>Optimized PostgreSQL queries reducing database load by 40% through indexing and query refactoring</li>
+                        <li>Implemented debounced search and multi-API calls using RxJS operators, improving performance and data reliability</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <div class="project-title">
+                        <i class="fas fa-industry"></i>
+                        Manufacturing Execution System (MES)
+                    </div>
+                    <ul class="project-details">
+                        <li>Developed Node.js microservices to integrate shop-floor devices with backend systems using RESTful APIs and WebSockets, enabling seamless data exchange</li>
+                        <li>Built Angular frontend for real-time manufacturing KPI visualization processing 500+ sensor data points per second</li>
+                        <li>Utilized RxJS for aggregating multi-source data streams, supporting real-time alerts and equipment monitoring</li>
+                        <li>Collaborated with cross-functional teams using Agile methodology to deliver features in 2-week sprints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+        <div class="section-header">
+            <h2>Technical Skills</h2>
+            <p>Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">NestJS</span>
+                    <span class="skill-tag">RESTful APIs</span>
+                    <span class="skill-tag">Web Services</span>
+                    <span class="skill-tag">API Security</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">RxJS</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Angular Material</span>
+                    <span class="skill-tag">PrimeNG</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> Database</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MariaDB</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Query Optimization</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-shield-alt"></i> Security & Auth</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Keycloak</span>
+                    <span class="skill-tag">JWT</span>
+                    <span class="skill-tag">OAuth 2.0</span>
+                    <span class="skill-tag">Security Protocols</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Jira</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+        <div class="section-header">
+            <h2>Education</h2>
+            <p>Academic background and achievements</p>
+        </div>
+        <div class="education-card">
+            <div class="education-header">
+                <div>
+                    <div class="university-name">Anna University</div>
+                    <div class="degree">Bachelor of Engineering - Electronics and Communication</div>
+                    <div class="degree" style="color: var(--text-dim); margin-top: 0.5rem;">Tindivanam</div>
+                </div>
+                <div class="education-date">Jul 2020 - Mar 2024</div>
+            </div>
+            <div class="achievements">
+                <div class="achievement-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>Best Outgoing Student Award</span>
+                </div>
+                <div class="achievement-badge">
+                    <i class="fas fa-medal"></i>
+                    <span>Third Place - National Embedded Systems Competition</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Let's build something amazing together</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:rajfrankie65@gmail.com?subject=Contact%20from%20Portfolio">rajfrankie65@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+919787311350">+91 9787311350</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/franklin-jebaraj" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/franklin-jebaraj" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:rajfrankie65@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-visual">
+                <div class="orbit-container">
+                    <div class="orbit orbit-1">
+                        <div class="orbit-icon" style="top: 0; left: 50%; transform: translate(-50%, -50%);">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                    </div>
+                    <div class="orbit orbit-2">
+                        <div class="orbit-icon" style="top: 50%; right: 0; transform: translate(50%, -50%);">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                    </div>
+                    <div class="orbit orbit-3">
+                        <div class="orbit-icon" style="bottom: 0; left: 50%; transform: translate(-50%, 50%);">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="orbit-center">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Franklin Jebaraj. Built with passion and code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
